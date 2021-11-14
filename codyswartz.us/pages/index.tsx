@@ -23,10 +23,8 @@ const Home: NextPage = () => {
           I’m a senior developer from Bend, Oregon. When I’m not busy working, I
           like to snowboard, play video games, or travel around. I am currently
           developing{" "}
-          <a href="https://kosmonautas.com">a language &amp; education app</a>
-          with the <a href="https://github.com/logic-happens">
-            Logic Happens
-          </a>{" "}
+          <a href="https://kosmonautas.com">a language &amp; education app</a>{" "}
+          with the <a href="https://github.com/logic-happens">Logic Happens</a>{" "}
           crew.
         </p>
         <img

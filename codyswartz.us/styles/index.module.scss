@@ -1,10 +1,15 @@
 @import "../styles/colors.scss";
+@import "../styles/breakpoints.scss";
 
 .container {
   padding: 40px 80px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: $breakpoint-mobile) {
+    flex-direction: row;
+  }
 }
 
 .title {
@@ -24,9 +29,13 @@
 }
 
 .intro {
-  width: 60%;
+  @media screen and (min-width: $breakpoint-mobile) {
+    width: 50%;
+  }
 }
 
 .links {
-  width: 30%;
+  @media screen and (min-width: $breakpoint-mobile) {
+    width: 40%;
+  }
 }
