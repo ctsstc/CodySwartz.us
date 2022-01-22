@@ -22,10 +22,7 @@ const Home: NextPage = () => {
         <p>
           I’m a senior developer from Bend, Oregon. When I’m not busy working, I
           like to snowboard, play video games, or travel around. I am currently
-          developing{" "}
-          <a href="https://kosmonautas.com">a language &amp; education app</a>{" "}
-          with the <a href="https://github.com/logic-happens">Logic Happens</a>{" "}
-          crew.
+          working with the uptech crew.
         </p>
         <img
           className={styles.snowboarder}
@@ -38,7 +35,7 @@ const Home: NextPage = () => {
         <LinkSection
           header="What I'm Working On"
           links={[
-            { title: "Kosmonautas", url: "https://kosmonautas.com/" },
+            { title: "uptech", url: "https://upte.ch/" },
             {
               title: "Bend Custom Homes & Remodeling",
               url: "https://www.bendch.com/",
@@ -62,20 +59,16 @@ const Home: NextPage = () => {
         />
 
         <LinkSection
-          header="Side Projects &amp; Dreams"
+          header="Side Projects & Dreams"
           links={[
             { title: "Happy Hour" },
-            { title: "EZ Menu &amp; Delivery", url: "" },
+            { title: "EZ Menu & Delivery", url: "" },
           ]}
         />
 
         <LinkSection
-          header="Places to Go &amp; Things to See"
-          links={[
-            { title: "Yucatan Peninsula + Cenotes" },
-            { title: "Germán Campos" },
-            { title: "Escape this continent" },
-          ]}
+          header="Places to Go & Things to See"
+          links={[{ title: "Escape this continent" }]}
         />
 
         {/* <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFyCoHrKob0oW3vQL_yTQzsKO0uPuAXqQAAe9HPSVi02BJ2w/viewform?embedded=true" width="640" height="778" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> --> */}

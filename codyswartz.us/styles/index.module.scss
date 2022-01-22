@@ -1,14 +1,22 @@
 @import "../styles/colors.scss";
 @import "../styles/breakpoints.scss";
+@import "./fonts.scss";
 
 .container {
   padding: 40px 80px;
   display: flex;
+  gap: 0 40px;
   justify-content: space-between;
   // align-items: center;
-  flex-direction: column;
-  @media screen and (min-width: $breakpoint-mobile) {
-    flex-direction: row;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    gap: 40px 0;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile-small) {
+    padding: 20px;
+    gap: 20px 0;
   }
 }
 
@@ -16,10 +24,15 @@
   font-size: 60px;
   max-width: 600px;
   margin-bottom: 25px;
+  font-family: $font-stack;
 
   em {
     color: $orange;
     font-style: normal;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    font-size: 40px;
   }
 }
 
@@ -29,13 +42,26 @@
 }
 
 .intro {
-  @media screen and (min-width: $breakpoint-mobile) {
-    width: 50%;
+  width: calc(60% - 20px);
+  p {
+    line-height: 150%;
+    font-size: 20px;
+    max-width: 400px;
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $breakpoint-mobile-small) {
+    font-size: 18px;
   }
 }
 
 .links {
-  @media screen and (min-width: $breakpoint-mobile) {
-    width: 40%;
+  font-family: $font-stack;
+  width: calc(40% - 20px);
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100%;
   }
 }

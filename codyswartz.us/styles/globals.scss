@@ -24,8 +24,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: url(/images/mountains.svg) no-repeat fixed,
-    linear-gradient($blue, white) fixed;
+  background: url(/images/mountains.svg) no-repeat scroll center center white;
   background-size: 150% auto;
   background-position: center bottom;
 }
