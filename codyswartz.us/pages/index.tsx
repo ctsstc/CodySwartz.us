@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
-import Head from "next/head";
-import styles from "../styles/index.module.scss";
-import LinkSection from "../components/link-section";
+import Head from 'next/head';
+
+import LinkSection from '../components/link-section';
+import styles from '../styles/index.module.scss';
 
 const Home: NextPage = () => {
   return (
@@ -16,13 +17,13 @@ const Home: NextPage = () => {
       <main className={styles.intro}>
         <h1 className={styles.title}>
           Hello there,
-          <br /> I’m <em>Cody Swartz</em>
+          <br /> I'm <em>Cody Swartz</em>
         </h1>
 
         <p>
-          I’m a senior developer from Bend, Oregon. When I’m not busy working, I
-          like to snowboard, play video games, or travel around. I am currently
-          working with the uptech crew.
+          I'm a senior developer born and raised in Bend, Oregon. When I'm not
+          busy working, I like to snowboard, play video games, or travel around.
+          I am currently working with the Uptech Studio crew.
         </p>
         <img
           className={styles.snowboarder}
@@ -35,16 +36,20 @@ const Home: NextPage = () => {
         <LinkSection
           header="What I'm Working On"
           links={[
-            { title: "uptech", url: "https://upte.ch/" },
+            { title: "Uptech Studio", url: "https://upte.ch/" },
             {
-              title: "Bend Custom Homes & Remodeling",
-              url: "https://www.bendch.com/",
+              title: "Discord Chat with Logic Happens",
+              url: "https://github.com/LogicHappens",
             },
+            // {
+            //   title: "Bend Custom Homes & Remodeling",
+            //   url: "https://www.bendch.com/",
+            // },
           ]}
         />
 
         <LinkSection
-          header="Relevant Links"
+          header="Social & Community"
           links={[
             {
               title: "LinkedIn",
@@ -61,8 +66,12 @@ const Home: NextPage = () => {
         <LinkSection
           header="Side Projects & Dreams"
           links={[
+            {
+              title: "Kumoricon Website & IT Crew",
+              url: "https://www.kumoricon.org/",
+            },
             { title: "Happy Hour" },
-            { title: "EZ Menu & Delivery", url: "" },
+            { title: "EZ Menu & Delivery" },
           ]}
         />
 
